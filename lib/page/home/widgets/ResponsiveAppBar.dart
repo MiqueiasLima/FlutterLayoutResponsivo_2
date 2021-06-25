@@ -31,7 +31,7 @@ class ResponsiveAppBar extends StatelessWidget {
               ResponsiveVisibility(
                 visible: false,
                 visibleWhen: [
-                  Condition.largerThan(name: TABLET),
+                  Condition.largerThan(name: MOBILE),
                 ],
                 child: Expanded(
                   child: Align(
@@ -67,7 +67,7 @@ class ResponsiveAppBar extends StatelessWidget {
               ResponsiveVisibility(
                 visible: false,
                 visibleWhen: [
-                  Condition.largerThan(name: TABLET),
+                  Condition.largerThan(name: MOBILE),
                 ],
                 replacement: ResponsiveMenuAction(),
                 child: Expanded(

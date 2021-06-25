@@ -109,7 +109,7 @@ class Post_Widget extends StatelessWidget {
                   ),
                 ),
               ),
-              ElevatedButton(onPressed: (){}, child: Text("Publicar"),style: ElevatedButton.styleFrom(primary: Colors.blue),),
+              ElevatedButton(onPressed: (){}, child: Text("Publicar"),style: ElevatedButton.styleFrom(primary: Colors.black,onPrimary: Colors.blue),),
             ],
           ),
         ]
