@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:layoutresponsivo2/page/home/widgets/Responsive_App_Bar.dart';
+import 'package:layoutresponsivo2/page/home/widgets/ResponsiveAppBar.dart';
 
 class Home_Page extends StatelessWidget {
   const Home_Page({Key key}) : super(key: key);
@@ -9,7 +9,20 @@ class Home_Page extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size(double.infinity,52),
-        child: Responsive_App_Bar(),
+        child: ResponsiveAppBar(),
+      ),
+      body: Align(
+        alignment: Alignment.center,
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxWidth: 1000,
+          ),
+          child: Container(
+            width: 2000,
+            height: 2000,
+            color: Colors.deepOrange,
+          ),
+        ),
       ),
     );
   }
