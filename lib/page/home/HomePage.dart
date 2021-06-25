@@ -15,18 +15,26 @@ class Home_Page extends StatelessWidget {
         child: ResponsiveAppBar(),
       ),
       body: Align(
-        alignment: Alignment.center,
-        child: ConstrainedBox(
+          alignment: Alignment.center,
+          child: ConstrainedBox(
             constraints: BoxConstraints(
               maxWidth: 1000,
             ),
-            child: ListView(
+            child: Row(
               children: [
-                 StoriesList(),
-                Post_Widget(),
+                Expanded(
+                  child: ListView(
+                      children: [
+                        StoriesList(),
+                        Post_Widget(),
+                        Post_Widget(),
+                        Post_Widget(),
+                      ]
+                  ),
+                )
               ],
-            )
-        ),
+            ),
+          )
       ),
     );
   }
